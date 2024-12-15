@@ -4,6 +4,9 @@
 
 Atualizado por Jovelino Claro.
 
+Falta muitas atulizações
+como validação de campos etc.
+
 1. Estilo Modernizado
 O layout das páginas foi aprimorado para adotar um design mais moderno e responsivo.
 O menu foi reestruturado com:
