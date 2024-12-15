@@ -89,10 +89,10 @@ and open the template in the editor.
                     <td>Nome do Aluno:</td><td><input type="text" name="nome_aluno"  value="<?php echo $resultado->nome_aluno; ?>"/></td>
                 </tr>
                 <tr>
-                    <td>Data:</td><td><input type="text" name="data"  value="<?php echo $resultado->data; ?>"/></td>
+                    <td>Data:</td><td><input type="date" name="data"  value="<?php echo $resultado->data; ?>"/></td>
                 </tr>  
                 <tr>
-                    <td>Professor:</td><td><input type="date" name="professor"  value="<?php echo $resultado->professor; ?>"/></td>
+                    <td>Professor:</td><td><input type="text" name="professor"  value="<?php echo $resultado->professor; ?>"/></td>
                 </tr> 
                 <tr>
                     <td>Código do Funcionario:</td><td><input type="text" name="funcionario_id"  value="<?php echo $resultado->funcionario_id; ?>"/></td>
@@ -141,8 +141,7 @@ and open the template in the editor.
               
             </table>
               </center> 
-              <div class="rodape">
-            <h3>Desenvolvedores: Wanderson Duarte & Adílio Lemos.</h3>
-        </div>
+             <!-- rodapé  -->
+    <script src="load-footer.js"></script>
     </body>
 </html>

@@ -1,136 +1,224 @@
-body{
-	text-align: center;
-       
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color:green;
-	text-align: center;	
-	letter-spacing: 3px;
-	word-spacing: 10px;
-	text-shadow: 2px 4px black;
-	font-family: "Cooper Black", Times, serif;
-}
-
-input{
-        font-size: 10pt;
-	display: block;
-	padding: 10px;
-	margin: 3px;	
-}
-
-input[type=text]:focus, input[type=button]:focus{
-	background-color: lightyellow;
-}	
-	
-label{
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     text-align: center;
-}
-h2{
-    color:#009933;
-	text-align: center;	
-	letter-spacing: 3px;
-	word-spacing: 10px;
-	text-shadow: 2px 2px black;
-	font-family: "Cooper Black", Times, serif;
-}
-	
-	
-        
-        button{
-	background-color:black;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-        text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Garante que o corpo ocupe toda a altura da tela */
 }
 
-a{
-	color: blue;
-        text-decoration: none;
+/* Estilos do título */
+h1 {
+    color: #3a3a3a;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000;
 }
 
- a:link{
-	color:blue;
+/* Subtítulo */
+h2 {
+    color: #009933;
+    font-size: 1.8em;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
- a:visited{
-	color: red;
+/* Estilo para as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
 }
 
- a:hover{
-	color: white;
-}
-
-a:active{
-	color: blue;
-}
-
-
-ul{
-	
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-        background-color: green;
-        color: black;
-}
-
-li{
-	float: left;
-}
-
-li a, .dropbtn{
-	display: inline-block;
-	color:black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration:none;
-        
-        
-}
-
-li a:hover, .dropdown:hover .dropbtn{
-	background-color: black;
-}
-
-li.dropdown{
-	display: inline-block;
-        
-}
-
-.dropdown-content{
-	display: none;
-	position: absolute;
-	background-color:green;
-	min-width: 160px;
-        box-shadow: 0px 8px 16px 0px #000000;
-}
-
-.dropdown-content a{
-	color: white;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-}
-
-.dropdown-content a:hover {background-color: black}
-.dropdown:hover .dropdown-content{
-	display: block;
-}
-.rodape{
-    color: white;
-    background-color: green;
+/* Formatação do rodapé */
+.rodape {
+    background-color: #333;
+    color: #fff;
     padding: 10px;
-    margin-top: 200px;
     text-align: center;
-    
+    position: relative;
+    font-size: 1em;
+    margin-top: auto;  /* Empurra o rodapé para o final */
+    width: 100%;
+}
+
+/* Estilos de link */
+a {
+    color: #009933;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d4d4d4;
+}
+
+/* Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin: 0 15px;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #009933;
+    color: #fff;
+}
+
+/* Dropdown */
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #009933;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Estilos do formulário */
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 12px 10px;
+    text-align: left;
+}
+
+table input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+table input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+table input[type="date"]:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para as mensagens de erro ou sucesso */
+h3 {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Ajustes responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table td {
+        padding: 10px 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+    }
 }

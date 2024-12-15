@@ -140,8 +140,7 @@ and open the template in the editor.
               <?php endforeach; ?>
             </table>
               </center>
-              <div class="rodape">
-            <h3>Desenvolvedores: Wanderson Duarte & Adílio Lemos.</h3>
-        </div>
+             <!-- rodapé  -->
+    <script src="load-footer.js"></script>
     </body>
 </html>
